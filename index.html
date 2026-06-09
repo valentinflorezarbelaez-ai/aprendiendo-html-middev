@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portafolio personal">
+    <meta name="keywords" content="portafolio, desarrollo web, programación">
+    <meta name="author" content="valentin florez arbelaez">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="mi portafolio profesional">
+    <meta property="og:description" content="mi portafolio profesional">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-sitio.com">
+    <meta property="og:image" content="https://tu-sitio.com/imagen-og.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="mi portafolio profesional">
+    <meta name="twitter:description" content="mi portafolio profesional">
+    
+    <title>mi portafolio profesional</title>
+    
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Mi portafolio" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header principal -->
+    <header role="banner">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="logo.png" alt="Nombre del sitio">
+            </a>
+            
+            <!-- Navegación principal -->
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main role="main">
+        <!-- Sección Hero -->
+        <section id="inicio" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title">Título Principal de la Página</h1>
+                <p>Subtítulo o descripción breve que capture la atención del usuario.</p>
+                <a href="#contacto" class="cta-button">Llama a la acción</a>
+            </div>
+        </section>
+        
+        <!-- Sección de servicios -->
+        <section id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <h2 id="servicios-title">Nuestros Servicios</h2>
+                
+                <article class="service">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción del servicio 1 con detalles relevantes.</p>
+                </article>
+                
+                <article class="service">
+                    <h3>Servicio 2</h3>
+                    <p>Descripción del servicio 2 con detalles relevantes.</p>
+                </article>
+                
+                <article class="service">
+                    <h3>Servicio 3</h3>
+                    <p>Descripción del servicio 3 con detalles relevantes.</p>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Sección sobre nosotros -->
+        <section id="nosotros" aria-labelledby="nosotros-title">
+            <div class="container">
+                <h2 id="nosotros-title">Sobre Nosotros</h2>
+                <p>Información sobre tu empresa o proyecto.</p>
+                
+                <figure>
+                    <img src="equipo.jpg" alt="Equipo de trabajo">
+                    <figcaption>Nuestro equipo de profesionales</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <!-- Sección de contacto -->
+        <section id="contacto" aria-labelledby="contacto-title">
+            <div class="container">
+                <h2 id="contacto-title">Contacto</h2>
+                
+                <address>
+                    <p>Calle Principal 123, Ciudad</p>
+                    <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+                    <p><a href="mailto:info@tu-sitio.com">info@tu-sitio.com</a></p>
+                </address>
+                
+                <form action="/enviar-formulario" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Sidebar opcional -->
+    <aside role="complementary" aria-label="Información adicional">
+        <div class="container">
+            <h3>Información Adicional</h3>
+            <p>Contenido complementario relevante.</p>
+        </div>
+    </aside>
+    
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; <time datetime="2026">2026</time> Nombre del Sitio. Todos los derechos reservados.</p>
+            
+            <nav aria-label="Navegación del footer">
+                <ul>
+                    <li><a href="/privacidad">Política de Privacidad</a></li>
+                    <li><a href="/terminos">Términos de Uso</a></li>
+                    <li><a href="/sitemap.xml">Sitemap</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
