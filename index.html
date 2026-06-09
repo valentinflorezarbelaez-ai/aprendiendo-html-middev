@@ -3,154 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="portafolio personal">
-    <meta name="keywords" content="portafolio, desarrollo web, programación">
-    <meta name="author" content="valentin florez arbelaez">
+    <meta name="description" content="Aura Remodelaciones Premium - Firma de arquitectura y diseño especializada en remodelaciones de interiores de lujo, cocinas de autor, baños tipo spa y renovaciones integrales.">
+    <meta name="keywords" content="remodelaciones de lujo, diseño de interiores, cocinas premium, baños de lujo, remodelacion bogota, remodelacion madrid, acabados de lujo, arquitectura residencial">
+    <meta name="author" content="Aura Luxury Renovations">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph para redes sociales -->
-    <meta property="og:title" content="mi portafolio profesional">
-    <meta property="og:description" content="mi portafolio profesional">
+    <meta property="og:title" content="Aura | Remodelaciones de Lujo y Diseño de Interiores">
+    <meta property="og:description" content="Transformamos espacios ordinarios en obras de arte habitables. Remodelaciones de interiores exclusivas y acabados premium.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tu-sitio.com">
-    <meta property="og:image" content="https://tu-sitio.com/imagen-og.jpg">
+    <meta property="og:url" content="https://aura-luxury-remodeling.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="mi portafolio profesional">
-    <meta name="twitter:description" content="mi portafolio profesional">
+    <meta name="twitter:title" content="Aura | Remodelaciones Premium">
+    <meta name="twitter:description" content="Transformaciones de lujo con los más altos estándares de diseño y artesanía.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80">
     
-    <title>mi portafolio profesional</title>
+    <title>Aura | Remodelaciones de Lujo y Diseño de Interiores Premium</title>
     
-    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Mi portafolio" />
-    <link rel="manifest" href="/images/site.webmanifest" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header principal -->
-    <header role="banner">
-        <div class="container">
-            <a href="/" class="logo">
-                <img src="logo.png" alt="Nombre del sitio">
+
+    <!-- Header Principal -->
+    <header class="main-header" role="banner" id="main-header">
+        <div class="container header-container">
+            <a href="#inicio" class="logo" id="header-logo">
+                <span class="logo-text">AURA</span>
+                <span class="logo-subtext">REMODELACIONES</span>
             </a>
             
-            <!-- Navegación principal -->
-            <nav role="navigation" aria-label="Navegación principal">
+            <!-- Navegación Principal -->
+            <nav role="navigation" aria-label="Navegación principal" class="nav-menu" id="nav-menu">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+                    <li><a href="#filosofia" class="nav-link">Filosofía</a></li>
+                    <li><a href="#contacto" class="nav-link nav-btn">Contacto</a></li>
                 </ul>
             </nav>
+            
+            <!-- Botón del menú móvil (Hamburguesa) -->
+            <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="mobile-nav-toggle">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
         </div>
     </header>
     
-    <!-- Contenido principal -->
+    <!-- Contenido Principal -->
     <main role="main">
+        
         <!-- Sección Hero -->
-        <section id="inicio" aria-labelledby="hero-title">
-            <div class="container">
-                <h1 id="hero-title">Título Principal de la Página</h1>
-                <p>Subtítulo o descripción breve que capture la atención del usuario.</p>
-                <a href="#contacto" class="cta-button">Llama a la acción</a>
+        <section id="inicio" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content-container">
+                <div class="hero-text-content">
+                    <span class="hero-tagline">DISEÑO Y ARTESANÍA EXCLUSIVA</span>
+                    <h1 id="hero-title">Transformamos Espacios en Obras de Arte</h1>
+                    <p>Remodelaciones integrales de alta gama diseñadas a la medida de tu estilo de vida. Creamos hogares sofisticados con acabados excepcionales.</p>
+                    <div class="hero-actions">
+                        <a href="#contacto" class="btn btn-primary">Solicitar Consultoría</a>
+                        <a href="#portafolio" class="btn btn-secondary" style="color: white; border-color: white;">Ver Proyectos</a>
+                    </div>
+                </div>
+                
+                <!-- Calculadora de Presupuesto Integrada (Inspirado en Buscador Premium) -->
+                <div class="estimator-widget" id="estimator-widget">
+                    <h3>Estimador de Inversión</h3>
+                    <p>Obtenga una estimación preliminar para su proyecto al instante.</p>
+                    
+                    <form id="estimator-form" onsubmit="return false;">
+                        <div class="form-row">
+                            <label for="est-espacio">Espacio a Remodelar</label>
+                            <select id="est-espacio" required>
+                                <option value="cocina">Cocina Gourmet</option>
+                                <option value="bano">Baño tipo Spa</option>
+                                <option value="sala">Salón Principal / Living</option>
+                                <option value="integral">Renovación Integral</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="est-acabados">Nivel de Acabados</label>
+                            <select id="est-acabados" required>
+                                <option value="signature">Signature (Alta Gama)</option>
+                                <option value="deluxe">Deluxe (Exclusivo)</option>
+                                <option value="royal">Royal Custom (Lujo Absoluto)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="est-area">Área Aproximada (m²)</label>
+                            <input type="number" id="est-area" min="5" max="500" value="30" required>
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary btn-block" id="calculate-btn">Calcular Estimado</button>
+                    </form>
+                    
+                    <!-- Resultados del Estimador (Oculto inicialmente) -->
+                    <div class="estimator-results" id="estimator-results" style="display: none;">
+                        <div class="results-value">
+                            <span class="results-label">Inversión Estimada:</span>
+                            <span class="price-range" id="price-range">$0.00</span>
+                        </div>
+                        <p class="results-note">Incluye diseño 3D, materiales de la gama seleccionada, mano de obra especializada e interventoría.</p>
+                        <button class="btn btn-outline-gold btn-block" id="send-estimate-btn">Reservar Consulta de Diseño</button>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <!-- Sección de servicios -->
-        <section id="servicios" aria-labelledby="servicios-title">
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="services-section reveal" aria-labelledby="services-title">
             <div class="container">
-                <h2 id="servicios-title">Nuestros Servicios</h2>
+                <h2 id="services-title">Nuestras Especialidades</h2>
+                <p class="section-desc">Estructuramos proyectos bajo un concepto de diseño holístico, donde cada elemento cuenta una historia de sofisticación y confort.</p>
                 
-                <article class="service">
-                    <h3>Servicio 1</h3>
-                    <p>Descripción del servicio 1 con detalles relevantes.</p>
-                </article>
-                
-                <article class="service">
-                    <h3>Servicio 2</h3>
-                    <p>Descripción del servicio 2 con detalles relevantes.</p>
-                </article>
-                
-                <article class="service">
-                    <h3>Servicio 3</h3>
-                    <p>Descripción del servicio 3 con detalles relevantes.</p>
-                </article>
+                <div class="services-grid">
+                    <!-- Servicio 1: Cocinas -->
+                    <article class="service-card" style="background-image: linear-gradient(to bottom, rgba(18,18,18,0.1), rgba(18,18,18,0.9)), url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80');">
+                        <div class="service-card-content">
+                            <span class="service-num">01</span>
+                            <h3>Cocinas de Autor</h3>
+                            <p>Cocinas gourmet funcionales de concepto abierto con encimeras de cuarzo o mármol exótico, e integración inteligente de electrodomésticos.</p>
+                            <a href="#contacto" class="service-link">Saber Más &rarr;</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Servicio 2: Baños -->
+                    <article class="service-card" style="background-image: linear-gradient(to bottom, rgba(18,18,18,0.1), rgba(18,18,18,0.9)), url('https://images.unsplash.com/photo-1552321554-5fecd8c7856a?auto=format&fit=crop&w=600&q=80');">
+                        <div class="service-card-content">
+                            <span class="service-num">02</span>
+                            <h3>Baños tipo Spa</h3>
+                            <p>Santuarios de relajación con duchas de lluvia empotradas, tinas exentas, grifería italiana empotrada y sistemas de iluminación circadiana.</p>
+                            <a href="#contacto" class="service-link">Saber Más &rarr;</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Servicio 3: Zonas Sociales -->
+                    <article class="service-card" style="background-image: linear-gradient(to bottom, rgba(18,18,18,0.1), rgba(18,18,18,0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80');">
+                        <div class="service-card-content">
+                            <span class="service-num">03</span>
+                            <h3>Salones & Áreas Sociales</h3>
+                            <p>Salones y comedores distinguidos con carpintería arquitectónica a medida, paneles acústicos elegantes y chimeneas automatizadas.</p>
+                            <a href="#contacto" class="service-link">Saber Más &rarr;</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Servicio 4: Remodelaciones Integrales -->
+                    <article class="service-card" style="background-image: linear-gradient(to bottom, rgba(18,18,18,0.1), rgba(18,18,18,0.9)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80');">
+                        <div class="service-card-content">
+                            <span class="service-num">04</span>
+                            <h3>Proyectos Llave en Mano</h3>
+                            <p>Renovaciones integrales residenciales. Gestionamos desde la conceptualización 3D inicial y los permisos, hasta el último detalle decorativo.</p>
+                            <a href="#contacto" class="service-link">Saber Más &rarr;</a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
         
-        <!-- Sección sobre nosotros -->
-        <section id="nosotros" aria-labelledby="nosotros-title">
+        <!-- Sección Portafolio (Proyectos de Firma) -->
+        <section id="portafolio" class="portfolio-section reveal" aria-labelledby="portfolio-title">
             <div class="container">
-                <h2 id="nosotros-title">Sobre Nosotros</h2>
-                <p>Información sobre tu empresa o proyecto.</p>
+                <h2 id="portfolio-title">Proyectos de Firma</h2>
                 
-                <figure>
-                    <img src="equipo.jpg" alt="Equipo de trabajo">
-                    <figcaption>Nuestro equipo de profesionales</figcaption>
-                </figure>
+                <!-- Filtros del Portafolio -->
+                <div class="portfolio-filters" id="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="cocina">Cocinas</button>
+                    <button class="filter-btn" data-filter="bano">Baños</button>
+                    <button class="filter-btn" data-filter="social">Sociales</button>
+                </div>
+                
+                <!-- Grilla de Proyectos -->
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="portfolio-item show" data-category="cocina">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Remodelación Cocina Penthouse Nogales" loading="lazy">
+                            <div class="portfolio-hover">
+                                <h3>Cocina Gourmet Nogales</h3>
+                                <span class="portfolio-loc">Bogotá, Colombia</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 2 -->
+                    <div class="portfolio-item show" data-category="bano">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80" alt="Baño Suite Principal Rosales" loading="lazy">
+                            <div class="portfolio-hover">
+                                <h3>Baño Suite Principal</h3>
+                                <span class="portfolio-loc">Rosales</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 3 -->
+                    <div class="portfolio-item show" data-category="social">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Salón Principal Villa de Lujo" loading="lazy">
+                            <div class="portfolio-hover">
+                                <h3>Salón Social Moderno</h3>
+                                <span class="portfolio-loc">Sotogrande</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 4 -->
+                    <div class="portfolio-item show" data-category="cocina">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Isla de Cocina en Mármol Calacatta" loading="lazy">
+                            <div class="portfolio-hover">
+                                <h3>Cocina Mármol Calacatta</h3>
+                                <span class="portfolio-loc">Chía</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 5 -->
+                    <div class="portfolio-item show" data-category="social">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Terraza e Integración Exterior" loading="lazy">
+                            <div class="portfolio-hover">
+                                <h3>Integración Interior/Exterior</h3>
+                                <span class="portfolio-loc">La Cabrera</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 6 -->
+                    <div class="portfolio-item show" data-category="bano">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Baño de Visitas Minimalista en Mármol Negro" loading="lazy">
+                            <div class="portfolio-hover">
+                                <h3>Tocador en Mármol Nero Marquina</h3>
+                                <span class="portfolio-loc">Santa Ana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <!-- Sección de contacto -->
-        <section id="contacto" aria-labelledby="contacto-title">
+        <!-- Sección de Filosofía / Nuestra Metodología -->
+        <section id="filosofia" class="philosophy-section reveal" aria-labelledby="philosophy-title">
             <div class="container">
-                <h2 id="contacto-title">Contacto</h2>
+                <h2 id="philosophy-title">Nuestra Filosofía de Trabajo</h2>
+                <p class="section-desc">Garantizamos una ejecución impecable y libre de estrés mediante un proceso metódico y transparente.</p>
                 
-                <address>
-                    <p>Calle Principal 123, Ciudad</p>
-                    <p><a href="tel:+1234567890">+1 234 567 890</a></p>
-                    <p><a href="mailto:info@tu-sitio.com">info@tu-sitio.com</a></p>
-                </address>
-                
-                <form action="/enviar-formulario" method="POST">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                <div class="process-timeline">
+                    <!-- Paso 1 -->
+                    <div class="timeline-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Consultoría & Planificación</h3>
+                            <p>Analizamos las dinámicas de tu hogar, tus gustos y necesidades. Estructuramos el presupuesto preliminar y los objetivos técnicos.</p>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <!-- Paso 2 -->
+                    <div class="timeline-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Conceptualización y Modelado 3D</h3>
+                            <p>Desarrollamos planos detallados y renders fotorrealistas. Podrás visualizar texturas, iluminación y la distribución antes del inicio de obra.</p>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <!-- Paso 3 -->
+                    <div class="timeline-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Ejecución Artesanal</h3>
+                            <p>Nuestros maestros de obra, carpinteros y electricistas certificados llevan a cabo la obra bajo una estricta supervisión de arquitectura.</p>
+                        </div>
                     </div>
                     
-                    <button type="submit">Enviar Mensaje</button>
-                </form>
+                    <!-- Paso 4 -->
+                    <div class="timeline-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Entrega de Firma</h3>
+                            <p>Realizamos una limpieza profunda posterior a la construcción y una entrega detallada. Disfruta de tu nuevo hogar con garantías respaldadas.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
+        <!-- Sección de Testimonios -->
+        <section class="testimonials-section reveal" aria-labelledby="testimonials-title">
+            <div class="container">
+                <h2 id="testimonials-title">Lo Que Dicen Nuestros Clientes</h2>
+                
+                <div class="testimonial-container">
+                    <div class="testimonial-slide active">
+                        <p class="quote">"El nivel de detalle y profesionalismo de Aura superó mis expectativas. Remodelaron nuestra cocina y sala de estar. El proceso fue limpio, ordenado y el resultado final es una verdadera obra de arte. Recomiendo ampliamente su nivel de acabados."</p>
+                        <span class="client-name">Carolina de Narváez</span>
+                        <span class="client-title">Propietaria, Penthouse Rosales</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contact-section reveal" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <!-- Información de Contacto -->
+                <div class="contact-info">
+                    <span class="contact-subtitle">DISEÑEMOS SU PRÓXIMO ESPACIO</span>
+                    <h2 id="contact-title" style="text-align: left; margin-bottom: 30px; padding-bottom: 0;">Contacto Exclusivo</h2>
+                    <p class="contact-desc">Estamos listos para hacer realidad su proyecto de remodelación de alta gama. Escríbanos o llámenos para agendar una consultoría de diseño sin compromiso.</p>
+                    
+                    <address class="contact-details">
+                        <div class="contact-item">
+                            <span class="item-label">Dirección de Oficina</span>
+                            <span class="item-val">Calle 93B # 12-45, Oficina 402, Bogotá</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="item-label">Línea de Atención</span>
+                            <a href="tel:+576013214567" class="item-val">+57 (601) 321-4567</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="item-label">Correo Electrónico</span>
+                            <a href="mailto:info@aura-remodelaciones.com" class="item-val">contacto@aura-remodelaciones.com</a>
+                        </div>
+                    </address>
+                </div>
+                
+                <!-- Formulario de Contacto -->
+                <div class="contact-form-wrapper">
+                    <form action="#" method="POST" class="premium-form" id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="nombre" name="nombre" required placeholder=" ">
+                            <label for="nombre">Nombre Completo</label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Correo Electrónico</label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="tel" id="telefono" name="telefono" placeholder=" ">
+                            <label for="telefono">Teléfono de Contacto</label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <textarea id="mensaje" name="mensaje" rows="4" required placeholder=" "></textarea>
+                            <label for="mensaje">Cuéntenos sobre su proyecto (Espacio, metros cuadrados, etc.)</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud</button>
+                    </form>
+                    
+                    <!-- Confirmación de Formulario (Oculto) -->
+                    <div class="form-success-msg" id="form-success-msg" style="display: none;">
+                        <h3>¡Solicitud Recibida!</h3>
+                        <p>Uno de nuestros asesores de diseño se pondrá en contacto con usted en un plazo máximo de 24 horas hábiles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
     
-    <!-- Sidebar opcional -->
-    <aside role="complementary" aria-label="Información adicional">
-        <div class="container">
-            <h3>Información Adicional</h3>
-            <p>Contenido complementario relevante.</p>
-        </div>
-    </aside>
-    
     <!-- Footer -->
-    <footer role="contentinfo">
-        <div class="container">
-            <p>&copy; <time datetime="2026">2026</time> Nombre del Sitio. Todos los derechos reservados.</p>
+    <footer role="contentinfo" class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <span class="logo-text">AURA</span>
+                <span class="logo-subtext">REMODELACIONES</span>
+                <p>La máxima expresión en arquitectura de interiores, acabados y confort residencial.</p>
+            </div>
             
-            <nav aria-label="Navegación del footer">
+            <div class="footer-col links-col">
+                <h3>Navegación</h3>
                 <ul>
-                    <li><a href="/privacidad">Política de Privacidad</a></li>
-                    <li><a href="/terminos">Términos de Uso</a></li>
-                    <li><a href="/sitemap.xml">Sitemap</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#filosofia">Filosofía</a></li>
                 </ul>
-            </nav>
+            </div>
+            
+            <div class="footer-col legal-col">
+                <h3>Legal & Soporte</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Garantía Aura</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; <time datetime="2026">2026</time> Aura Remodelaciones. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <span>|</span>
+                <a href="#" aria-label="Pinterest">Pinterest</a>
+                <span>|</span>
+                <a href="#" aria-label="Houzz">Houzz</a>
+            </div>
         </div>
     </footer>
     
